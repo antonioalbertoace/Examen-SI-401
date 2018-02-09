@@ -1,9 +1,11 @@
 # Examen-SI-401
-recursividad
+Tema 1. Recursividad Fibonacci
+
 La recursividad, es un concepto bastante importante y bien básico de la programación. Sin embargo es bastante difícil de asimilar 
 al principio. Se supone que es algo que se va entendiendo con práctica y tiempo.
 
-Ejemplo:
+Ejemplo en java:
+
 package calculofactorial;
 public class CalculoFactorial{
 public long factorial( long numero ){
@@ -19,7 +21,7 @@ public long factorial( long numero ){
  }
  }
  
- 
+ //Estecodigo es para correr el programa
  package calculofactorial;
 public class PruebaFactorial{
     

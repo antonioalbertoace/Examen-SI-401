@@ -1,9 +1,11 @@
-# Examen-SI-401
+# Examen SI-401
 Tema 1. Recursividad Fibonacci
 
 La recursividad, es un concepto bastante importante y bien básico de la programación. Sin embargo es bastante difícil de asimilar 
 al principio. Se supone que es algo que se va entendiendo con práctica y tiempo.
+
 Ejemplo en java:
+
 package calculofibonacci;
 
 public class CalculoFibonacci{
@@ -32,6 +34,7 @@ public class PruebaFibonacci{
  }
  
 Ejemplo en python:
+
 sucesion = input("Ingrese: (S) límite máximo, (N) número de \
 términos? ")
 
@@ -53,7 +56,8 @@ elif sucesion == 'N':
 
 else:
     print("Debe ingresar S o N")
-Tema 2.Recursividad Factorial
+
+Tema 2. Recursividad Factorial
 
 Ejemplo en java:
 
@@ -82,3 +86,33 @@ CalculoFactorial calculoFactorial = new CalculoFactorial();
  calculoFactorial.mostrarFactoriales();
  }
  } 
+ 
+ Ejemplo en Python
+
+factorial de 5 seria:
+	5 * 4 * 3 * 2 * 1  = 120
+"""
+ 
+def factorial(x,n):
+	"""
+	Función recursiva que calcula el factorial
+	Tiene que recibir:
+		x=>El ultimo valor calculado
+		n=>El numero a multiplicar
+	"""
+	if(n>0):
+		# Se va llamando a ella misma mientras el valor sea superior a 0
+		x=factorial(x,n-1)
+		x=x*n
+	else:
+		x=1
+	return x
+ 
+try:
+	numero = int(raw_input("inserta un numero "))
+ 
+	# Ejecutamos la función recusiva para el calculo
+	calculo=factorial(1,numero)
+	print "El factorial de %s es %s" % (numero,calculo)
+except:
+	print "\nTiene que ser un valor numeric

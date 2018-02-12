@@ -4,7 +4,7 @@ Tema 1. Recursividad Fibonacci
 La recursividad, es un concepto bastante importante y bien básico de la programación. Sin embargo es bastante difícil de asimilar 
 al principio. Se supone que es algo que se va entendiendo con práctica y tiempo.
 
-Ejemplo en java:
+1. Ejemplo en java:
 
 package calculofibonacci;
 
@@ -33,7 +33,7 @@ public class PruebaFibonacci{
  }
  }
  
-Ejemplo en python:
+2. Ejemplo en python:
 
 sucesion = input("Ingrese: (S) límite máximo, (N) número de \
 términos? ")
@@ -59,7 +59,7 @@ else:
 
 Tema 2. Recursividad Factorial
 
-Ejemplo en java:
+1. Ejemplo en java:
 
 package calculofactorial;
 public class CalculoFactorial{
@@ -87,7 +87,7 @@ CalculoFactorial calculoFactorial = new CalculoFactorial();
  }
  } 
  
- Ejemplo en Python
+ 2. Ejemplo en Python
 
 factorial de 5 seria:
 	5 * 4 * 3 * 2 * 1  = 120
@@ -116,3 +116,40 @@ try:
 	print "El factorial de %s es %s" % (numero,calculo)
 except:
 	print "\nTiene que ser un valor numeric
+
+Tema 3. Arreglos
+
+1. Arreglos unidimencionales
+
+En Java, un arreglo es un grupo de variables (llamadas elementos o componentes) que contienen valores, todos
+del mismo tipo. Recuerde que los tipos en Java se dividen en dos categorías: tipos primitivos y tipos de referencia.
+Los arreglos son objetos, por lo que se consideran como tipos de referencia. Como veremos pronto, lo que
+consideramos generalmente como un arreglo es en realidad una referencia a un objeto arreglo en memoria.
+
+Ejemplo en java:
+
+public class InicArreglo
+ {
+ public static void main( String args[] )
+ {
+ final int LONGITUD_ARREGLO = 10; // declara la constante
+ int arreglo[] = new int[ LONGITUD_ARREGLO ]; // crea el arreglo
+
+ // calcula el valor para cada elemento del arreglo
+ for ( int contador = 0; contador < arreglo.length; contador++ )
+ arreglo[ contador ] = 2 + 2 * contador;
+
+ System.out.printf( "%s%8s\n", "Indice", "Valor" ); // encabezados de columnas
+
+ // imprime el valor de cada elemento del arreglo
+ for ( int contador = 0; contador < arreglo.length; contador++ )
+ System.out.printf( "%5d%8d\n", contador, arreglo[ contador ] );
+ } // fin de main
+ } // fin de la clase InicArreglo
+ 
+ Ejemplo en python:
+ x=int(raw_input("ingrese numero: "))
+for i in range(1,x+1):
+	for j in range(1,11):
+		print "{:>5}".format(i*j),
+	print
